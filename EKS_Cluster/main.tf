@@ -20,8 +20,7 @@ module "eks" {
   }
 
   eks_managed_node_groups = {
-
-    node_group = {
+    nodes = {
       min_size     = 1
       max_size     = 3
       desired_size = 2
