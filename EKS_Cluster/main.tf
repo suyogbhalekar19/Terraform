@@ -15,7 +15,7 @@ module "eks" {
 
   eks_managed_node_group_defaults = {
     ami_type               = var.ami_value
-    instance_types         = var.instance_types_value
+    instance_types         = var.instance_type_value
     vpc_security_group_ids = [aws_security_group.all_worker_mgmt.id]
   }
 
