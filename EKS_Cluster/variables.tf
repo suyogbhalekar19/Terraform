@@ -31,3 +31,12 @@ variable "private_subnets" {
   description = "Private_Subnets CIDR"
   type        = list(string)
 }
+
+variable "bucket" {
+  description = "Backet for EKS"
+  type = string
+}
+
+variable "billing_mode" {
+  description = "Billing Mode"
+}
